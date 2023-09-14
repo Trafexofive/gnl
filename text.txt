@@ -1,0 +1,23 @@
+NAME = excutableName
+
+SRC = main.c test.c
+OBJ := $(SRC:%.c=%.o)
+
+all: executableName
+
+executableName: main.o test.o
+    gcc -Wextra -Wall -Werror main.o -o executableName
+
+main.o: main.c
+    gcc -Wextra -Wall -Werror -c main.c -o main.o
+
+test.o: test.c
+    gcc -Wextra -Wall -Werror -c test.c -o test.o
+
+clean:
+    rm -f main.o test.o
+
+fclean: clean
+    rm -f executableName
+
+re: fclean all
