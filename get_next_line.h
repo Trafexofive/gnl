@@ -6,7 +6,7 @@
 /*   By: mlamkadm <mlamkadm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 13:34:41 by mlamkadm          #+#    #+#             */
-/*   Updated: 2023/09/13 15:38:02 by mlamkadm         ###   ########.fr       */
+/*   Updated: 2023/09/15 00:52:47 by mlamkadm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
 # include <fcntl.h>
 
 size_t	ft_strlen(char *s);
